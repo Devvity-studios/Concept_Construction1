@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><a href="index.html"><img src="final_logo-removebg-preview.png" alt="Construction"></a></li>
+            <li><a class="not_logo" href="index.html">Home</a></li>
+            <li><a class="not_logo" href="locations.html">Locations</a></li>
+            <li><a class="not_logo" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-heading">
+        <h1>Contact Us</h1>
+        <p>Have a question or want to reach out? We’re always happy to chat. Drop us a message or swing by during our business hours!</p>
+    </div>
+
+    <div class="contact-container">
+        <form class="contact-form" action="mailto:info@solidbuild.com" method="POST" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required aria-label="Name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required aria-label="Email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What’s on your mind?" required aria-label="Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Other Ways to Reach Us</h2>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> info@solidbuild.com</p>
+            <p><strong>Address:</strong> 1234 Build Lane, Construct City, CT 56789</p>
+            <p><strong>Hours:</strong> Mon–Fri: 9am–5pm</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li>
+                <h3>Do you offer free consultations?</h3>
+                <p>Yep! Just hit us up through the contact form and we’ll get back to you within 24 hours.</p>
+            </li>
+            <li>
+                <h3>Where are you located?</h3>
+                <p>We’re based in Construct City but expanding soon. Check the <a href="locations.html">Locations</a> page!</p>
+            </li>
+            <li>
+                <h3>Do you work with residential or commercial projects?</h3>
+                <p>Both! Big, small, weird — we build it all.</p>
+            </li>
+        </ul>
+    </div>
+
+    <button onclick="scrollToTop()" id="topBtn" title="Back to top">&#8593;</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
